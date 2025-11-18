@@ -755,6 +755,7 @@
 		text-align: center;
 		max-width: 900px;
 		padding: 0 2rem;
+		margin-top: 5rem;
 	}
 
 	.hero-badge {
