@@ -138,7 +138,13 @@
 
 	<!-- Mobile Menu -->
 	{#if isMenuOpen}
-		<div class="mobile-menu" onclick={() => isMenuOpen = false}>
+		<div 
+			class="mobile-menu" 
+			role="dialog" 
+			aria-modal="true"
+			onclick={() => isMenuOpen = false}
+			onkeydown={(e) => e.key === 'Escape' && (isMenuOpen = false)}
+		>
 			<div class="mobile-menu-content">
 				<a href="#home" onclick={() => isMenuOpen = false}>Home</a>
 				<a href="#about" onclick={() => isMenuOpen = false}>About</a>
@@ -510,9 +516,9 @@
 					<p>Premium Interior Design Studio</p>
 				</div>
 				<div class="footer-social">
-					<a href="#" aria-label="Instagram">Instagram</a>
-					<a href="#" aria-label="Facebook">Facebook</a>
-					<a href="#" aria-label="WhatsApp">WhatsApp</a>
+					<a href="https://instagram.com/terasinterior" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+					<a href="https://facebook.com/terasinterior" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+					<a href="https://wa.me/6281xxxxxxxx" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
 				</div>
 			</div>
 			<div class="footer-bottom">
