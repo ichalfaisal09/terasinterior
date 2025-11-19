@@ -874,20 +874,24 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 0.5rem;
-		color: #b0b0b0;
+		color: #ffffff;
 		font-size: 0.875rem;
 		letter-spacing: 2px;
+		font-weight: 600;
+		z-index: 10;
+		text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 	}
 
 	.scroll-line {
-		width: 1px;
-		height: 40px;
-		background: linear-gradient(to bottom, #ff6b35, transparent);
+		width: 2px;
+		height: 50px;
+		background: linear-gradient(to bottom, #ff6b35, #f7931e, transparent);
 		animation: scroll 2s ease-in-out infinite;
+		box-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
 	}
 
 	@keyframes scroll {
-		0%, 100% { transform: translateY(0); opacity: 0; }
+		0%, 100% { transform: translateY(0); opacity: 0.3; }
 		50% { transform: translateY(20px); opacity: 1; }
 	}
 
