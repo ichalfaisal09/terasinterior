@@ -751,7 +751,7 @@
 
 	.hero-content {
 		position: relative;
-		z-index: 1;
+		z-index: 10;
 		text-align: center;
 		max-width: 900px;
 		padding: 0 2rem;
@@ -878,7 +878,7 @@
 		font-size: 0.875rem;
 		letter-spacing: 2px;
 		font-weight: 600;
-		z-index: 10;
+		z-index: 0;
 		text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 	}
 
