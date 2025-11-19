@@ -870,7 +870,7 @@
 		bottom: 3rem;
 		left: 50%;
 		transform: translateX(-50%);
-		display: flex;
+		display: none;
 		flex-direction: column;
 		align-items: center;
 		gap: 0.5rem;
@@ -2308,6 +2308,10 @@
 		}
 
 		.menu-toggle {
+			display: flex;
+		}
+
+		.scroll-indicator {
 			display: flex;
 		}
 
