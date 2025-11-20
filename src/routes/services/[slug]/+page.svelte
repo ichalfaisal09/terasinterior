@@ -75,7 +75,7 @@
 			icon: '🏢',
 			title: 'Commercial Design',
 			subtitle: 'Tingkatkan Brand Value Bisnis Anda',
-			description: 'Desain interior komersial yang strategis untuk meningkatkan produktivitas, brand image, dan customer experience. Kami memahami bahwa ruang bisnis yang baik adalah investasi jangka panjang.',
+			description: 'Desain interior komersial yang strategis untuk meningkatkan produktivitas, brand image, dan customer experience. Kami memahami bahwa ruang bisnis yang baik adalah investasi jangka panjang',
 			image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80',
 			features: [
 				{
