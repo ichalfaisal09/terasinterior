@@ -14,7 +14,7 @@
 	<div class="hero-content">
 		<div class="hero-badge">Premium Interior Design</div>
 		<h1 class="hero-title">
-			<span class="title-line">Crafting Spaces</span>
+			<span class="title-line">Omar Crafting Spaces</span>
 			<span class="title-line accent">That Inspire</span>
 		</h1>
 		<p class="hero-subtitle">
