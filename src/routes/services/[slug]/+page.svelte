@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	import AnimatedBackground from '$lib/components/AnimatedBackground.svelte';
 	import WaveBackground from '$lib/components/WaveBackground.svelte';
 	import GeometricPattern from '$lib/components/GeometricPattern.svelte';
@@ -271,7 +272,7 @@
 		<div class="service-hero-overlay" style="background-image: url('{service.image}')"></div>
 		<div class="container">
 			<div class="service-hero-content">
-				<a href="/#services" class="back-link">← Kembali ke Services</a>
+				<a href="{base}/#services" class="back-link">← Kembali ke Services</a>
 				<div class="service-icon-large">{service.icon}</div>
 				<h1 class="service-hero-title">{service.title}</h1>
 				<p class="service-hero-subtitle">{service.subtitle}</p>

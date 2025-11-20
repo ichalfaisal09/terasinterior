@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import AnimatedBackground from './AnimatedBackground.svelte';
 	import WaveBackground from './WaveBackground.svelte';
 
@@ -44,7 +45,7 @@
 					<div class="service-icon">{service.icon}</div>
 					<h3 class="service-title">{service.title}</h3>
 					<p class="service-description">{service.description}</p>
-					<a href="/services/{service.slug}" class="service-link">Learn More →</a>
+					<a href="{base}/services/{service.slug}" class="service-link">Learn More →</a>
 				</div>
 			{/each}
 		</div>
