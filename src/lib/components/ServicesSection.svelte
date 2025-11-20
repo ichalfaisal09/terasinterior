@@ -6,22 +6,26 @@
 		{
 			icon: '🏠',
 			title: 'Residential Design',
-			description: 'Transformasi rumah impian Anda menjadi karya seni yang fungsional dan memukau'
+			description: 'Transformasi rumah impian Anda menjadi karya seni yang fungsional dan memukau',
+			slug: 'residential-design'
 		},
 		{
 			icon: '🏢',
 			title: 'Commercial Design',
-			description: 'Desain ruang komersial yang meningkatkan brand value dan produktivitas'
+			description: 'Desain ruang komersial yang meningkatkan brand value dan produktivitas',
+			slug: 'commercial-design'
 		},
 		{
 			icon: '✨',
 			title: 'Renovation',
-			description: 'Pembaruan total yang menghadirkan kehidupan baru pada ruang Anda'
+			description: 'Pembaruan total yang menghadirkan kehidupan baru pada ruang Anda',
+			slug: 'renovation'
 		},
 		{
 			icon: '🎨',
 			title: 'Custom Furniture',
-			description: 'Furniture eksklusif yang dirancang khusus sesuai kebutuhan dan gaya Anda'
+			description: 'Furniture eksklusif yang dirancang khusus sesuai kebutuhan dan gaya Anda',
+			slug: 'custom-furniture'
 		}
 	];
 </script>
@@ -40,7 +44,7 @@
 					<div class="service-icon">{service.icon}</div>
 					<h3 class="service-title">{service.title}</h3>
 					<p class="service-description">{service.description}</p>
-					<a href="#contact" class="service-link">Learn More →</a>
+					<a href="/services/{service.slug}" class="service-link">Learn More →</a>
 				</div>
 			{/each}
 		</div>

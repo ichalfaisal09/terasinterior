@@ -40,7 +40,7 @@
 		</div>
 	</div>
 	<div class="scroll-indicator">
-		<span>Scroll</span>
+		<span>Gulir ke bawah</span>
 		<div class="scroll-line"></div>
 	</div>
 </section>

@@ -137,12 +137,33 @@ html {
 	/* Hero Section */
 	.hero {
 		position: relative;
-		height: 100vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
 		overflow: hidden;
+	}
+
+	/* Hero Content Responsive */
+	/* Desktop (default sudah di atas) */
+	@media (min-width: 969px) {
+		.hero {
+			height: 110vh;
+		}
+	}
+
+	/* Tablet */
+	@media (max-width: 968px) and (min-width: 641px) {
+		.hero {
+			height: 100vh;
+		}
+	}
+
+	/* Mobile */
+	@media (max-width: 640px) {
+		.hero {
+			height: 100vh;
+		}
 	}
 
 	.hero::before {
@@ -255,10 +276,33 @@ html {
 		position: relative;
 		z-index: 10;
 		text-align: center;
-		max-width: 900px;
-		padding: 0 2rem;
-		margin-top: 5rem;
-		background:red;
+	}
+
+	/* Hero Content Responsive */
+	/* Desktop (default sudah di atas) */
+	@media (min-width: 969px) {
+		.hero-content {
+			max-width: 900px;
+			padding: 0 2rem;
+		}
+	}
+
+	/* Tablet */
+	@media (max-width: 968px) and (min-width: 641px) {
+		.hero-content {
+			max-width: 700px;
+			padding: 0 3rem;
+			margin-top: 4rem;
+		}
+	}
+
+	/* Mobile */
+	@media (max-width: 640px) {
+		.hero-content {
+			max-width: 100%;
+			padding: 0 1.5rem;
+			margin-top: 0.01rem;
+		}
 	}
 
 	.hero-badge {
@@ -387,7 +431,7 @@ html {
 
 	.scroll-line {
 		width: 2px;
-		height: 50px;
+		height: 30px;
 		background: linear-gradient(to bottom, #ff6b35, #f7931e, transparent);
 		animation: scroll 2s ease-in-out infinite;
 		box-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
@@ -1782,6 +1826,10 @@ html {
 		.why-grid {
 			grid-template-columns: 1fr;
 			gap: 2rem;
+		}
+
+		.scroll-indicator {
+			display: flex;
 		}
 
 		.process-grid {
